@@ -6,6 +6,11 @@ import (
 	"path/filepath"
 )
 
+/*
+*
+  - 列出目录下的所有文件
+    通过go build -o file_tool ./learning_demo/commandline_file_tool/file_tools.go 编译的到可执行文件
+*/
 func listFiles(dir string) error {
 	fmt.Printf("Listing files in: %s\n", dir)
 	return filepath.WalkDir(dir, func(path string, d os.DirEntry, err error) error {
