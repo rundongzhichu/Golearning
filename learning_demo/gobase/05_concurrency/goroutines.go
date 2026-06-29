@@ -42,7 +42,7 @@ func demoBasicGoroutine() {
 
 // ==================== WaitGroup 同步 ====================
 
-func demoWaitGroup() {
+func demoWaitGroup1() {
 	fmt.Println("\n=== WaitGroup 同步 ===")
 
 	var wg sync.WaitGroup

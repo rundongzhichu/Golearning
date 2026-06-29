@@ -173,9 +173,9 @@ func demoCommonPatterns() {
 	fmt.Println("\n=== 指针常用模式 ===")
 
 	// 模式1：从函数返回指针（Go 支持返回局部变量的指针）
-	newPerson := func(name string, age int) *Person {
+	newPerson := func(name string, age int) *Person1 {
 		// p 在栈上分配，但返回指针后自动逃逸到堆
-		return &Person{name, age}
+		return &Person1{name, age}
 	}
 	p := newPerson("Alice", 30)
 	fmt.Printf("返回局部指针: %+v\n", p)
@@ -199,8 +199,8 @@ func demoCommonPatterns() {
 	fmt.Printf("Timeout 设置为 %d\n", *config.Timeout)
 }
 
-// Person 简单的人员结构体
-type Person struct {
+// Person1 简单的人员结构体
+type Person1 struct {
 	Name string
 	Age  int
 }

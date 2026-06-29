@@ -116,7 +116,7 @@ func demoEmbedding() {
 		e.Name, e.Age, e.City, e.Company)
 
 	// 也可以显式访问（字段名即类型名）
-	fmt.Printf("e.Person.Name: %s, e.Address.City: %s\n",
+	fmt.Printf("e.Person1.Name: %s, e.Address.City: %s\n",
 		e.Person.Name, e.Address.City)
 
 	// 嵌入多个类型时，如果有字段名冲突，必须显式指定路径
